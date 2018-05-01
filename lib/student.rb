@@ -28,7 +28,7 @@ class Student
 
   def save(name, grade)
     student = Student.new(name, grade)
-    
+
   end
 
   def self.all
