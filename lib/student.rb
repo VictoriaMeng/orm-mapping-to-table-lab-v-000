@@ -6,7 +6,7 @@ class Student
 
   def initialize(name, grade)
     @name = name
-    @grade = game
+    @grade = grade
   end
 
 end
