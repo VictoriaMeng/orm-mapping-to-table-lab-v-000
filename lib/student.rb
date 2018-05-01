@@ -34,7 +34,7 @@ class Student
       VALUES (?, ?)
     SQL
     DB[:conn].execute(sql, @name, @grade)
-    @id = DB[:conn].execute("SELECT id FROM students WHERE name = ?", @name)
+    @id = DB[:conn].execute("SELECT id FROM students WHERE name = ?", @name)[0][0]
   end
 
   def self.all
