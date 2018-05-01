@@ -40,4 +40,7 @@ class Student
   def self.all
     @@all
   end
+
+  def create
+  end
 end
