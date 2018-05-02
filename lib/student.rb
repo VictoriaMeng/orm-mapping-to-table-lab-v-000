@@ -42,7 +42,6 @@ class Student
   end
 
   def self.create(attributes)
-    attributes.each { |key, value| Student.new.send("#{key}=", value) }
     student = Student.new(nil, nil)
     student.save
     student
