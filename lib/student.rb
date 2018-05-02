@@ -41,8 +41,9 @@ class Student
     @@all
   end
 
-  def self.create(name, grade)
-    student = Student.new(name, grade)
+  def self.create(attributes)
+    attributes.each { |key, value| Student.new.send("#{key}=", value) }
+    student = Student.new(nil, nil)
     student.save
     student
   end
